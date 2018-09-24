@@ -1,0 +1,29 @@
+package test2;
+
+public class hello {
+	public static void main(String[] args) {
+		Scanner number = new Scanner( System.in );
+		System.out.println("Gimme a number (*w*)");
+		string numget;
+        numget = number.nextLine();
+        int mynumber = numget;
+        int mynumber2;
+        mynumber2 = mynumber + 10;
+        if (mynumber < 10 && mynumber2 > 10) {
+        	System.out.println(mynumber2);
+        	System.out.println("it's greater than ten!");
+        }
+        else if (mynumber > 10 && mynumber2 > 10) {
+        	System.out.println(mynumber);
+        	System.out.println("it's greater than ten (^-^)");
+        	System.out.println(mynumber2);
+        	System.out.println("it's also greater than ten \\(^o^)/");
+        }
+        else if(mynumber < 10 && mynumber2 <10) {
+        	System.out.println(mynumber);
+        	System.out.println(mynumber2);
+        	System.out.println("neither of these are greater than ten (*o*)");
+        }
+        	
+    }
+}

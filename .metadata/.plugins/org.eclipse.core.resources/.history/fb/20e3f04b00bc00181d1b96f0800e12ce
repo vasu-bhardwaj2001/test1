@@ -1,0 +1,11 @@
+package test2;
+
+public class hello {
+	public static void main(String[] args) {
+        int mynumber;
+        mynumber = 5;
+        int mynumber2;
+        mynumber2 = mynumber + 10;
+        System.out.println(mynumber2);
+    }
+}

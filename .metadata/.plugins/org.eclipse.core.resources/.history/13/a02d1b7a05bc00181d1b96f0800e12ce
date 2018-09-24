@@ -1,0 +1,67 @@
+package test2;
+
+import java.util.Scanner;
+
+public class hello {
+	public static void main(String[] args) {
+		
+		//Scans UI to get first input, sets it equal to an integer//
+		Scanner number = new Scanner( System.in );
+		System.out.println("Gimme a number (*w*)");
+		String numget;
+        numget = number.nextLine();
+        int mynumber = Integer.parseInt(numget);
+        number.close();
+        
+        //Scans UI to get second input, sets it equal to an integer//
+        Scanner number2 = new Scanner( System.in );
+        System.out.println("Gimme another one (*w*)");
+        String num2get;
+        num2get = number2.nextLine();
+        int mynumber2 = Integer.parseInt(num2get);
+        number2.close();
+        
+        //Creates third integer equal to sum of first two integers
+        int mynumber3 = mynumber + mynumber2;
+        
+        if (mynumber > 10 && mynumber3 > 10 && mynumber2 < 10) {
+        	System.out.println(mynumber);
+        	System.out.println("it's greater than ten (^-^)");
+        	System.out.println(mynumber2);
+        	System.out.println(mynumber3);
+        	System.out.println("it's also greater than ten \\(^o^)/");
+        }
+        
+        else if (mynumber2 > 10 && mynumber3 > 10 && mynumber < 10) {
+        	System.out.println(mynumber);
+        	System.out.println(mynumber2);
+        	System.out.println("it's greater than ten (^-^)");
+        	System.out.println(mynumber3);
+        	System.out.println("it's also greater than ten \\(^o^)/");
+        }
+        
+        else if (mynumber2 < 10 && mynumber3 > 10 && mynumber < 10) {
+        	System.out.println(mynumber);
+        	System.out.println(mynumber2);
+        	System.out.println(mynumber3);
+        	System.out.println("Your numbers make a number greater than ten |(^o^)|");
+        }
+        
+        else if (mynumber > 10 && mynumber2 > 10 && mynumber3 > mynumber+ 10) {
+        	System.out.println(mynumber);
+        	System.out.println("it's greater than ten (^-^)");
+        	System.out.println(mynumber2);
+        	System.out.println("it's also greater than ten \\(^o^)/");
+        	System.out.println(mynumber3);
+        	System.out.println("SO THIS IS GREATER THAN TEN TOOOOOOO!!");
+        }
+        
+        else if(mynumber < 10 && mynumber2 <10 && mynumber3 <10) {
+        	System.out.println(mynumber);
+        	System.out.println(mynumber2);
+        	System.out.println(mynumber3);
+        	System.out.println("none of these are greater than ten (*o*)");
+        }
+        	
+    }
+}
